@@ -25,15 +25,15 @@ export const getQuestById = async (req, res) => {
     if (
       !quest ||
       (!quest.owner.equals(req.hero._id) &&
-       !quest.collaborators.some(c => c.equals(req.hero._id)))
+        !quest.collaborators.some((c) => c.equals(req.hero._id)))
     ) {
       return res.status(403).json({ error: "Not authorized to view this quest." });
     }
 
     res.json(quest);
   } catch (err) {
-    console.error("Error in getQuestById:", err);
-    res.status(500).json({ error: "Server error while fetching quest." });
+    console.error("Error fetching quest:", err);
+    res.status(500).json({ error: "Server error." });
   }
 
   // Optional: restrict access to members
