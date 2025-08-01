@@ -17,19 +17,24 @@ export const getQuests = async (req, res) => {
 
 // GET a single quest by ID
 export const getQuestById = async (req, res) => {
-  const quest = await Quest.findById(req.params.id)
-    .populate("owner", "username")
-    .populate("collaborators", "username avatar");
+  try {
+    const quest = await Quest.findById(req.params.id)
+      .populate("owner", "username")
+      .populate("collaborators", "username avatar");
 
-  if (
-    !quest ||
-    (!quest.owner.equals(req.hero._id) &&
-     !quest.collaborators.some(c => c.equals(req.hero._id)))
-  ) {
-    return res.status(403).json({ error: "Not authorized to view this quest." });
+    if (
+      !quest ||
+      (!quest.owner.equals(req.hero._id) &&
+       !quest.collaborators.some(c => c.equals(req.hero._id)))
+    ) {
+      return res.status(403).json({ error: "Not authorized to view this quest." });
+    }
+
+    res.json(quest);
+  } catch (err) {
+    console.error("Error in getQuestById:", err);
+    res.status(500).json({ error: "Server error while fetching quest." });
   }
-
-  res.json(quest);
 
   // Optional: restrict access to members
   const isAuthorized =
