@@ -128,3 +128,19 @@
 
 🧪 Error messages returned in JSON format
 
+---
+
+🙏 Acknowledgements
+[Per Scholas] – For providing the curriculum, support, and inspiration to build a full MERN project from scratch.
+
+[Abe & Colton] – Thank you for guidance, code reviews, and helping debug the tough stuff.
+
+[OpenAI / ChatGPT] – For assistance with code explanations, architecture decisions, and syntax support throughout development.
+
+[MongoDB & Mongoose Docs] – For excellent documentation and flexible database tools.
+
+[Vercel & Render] – For seamless deployment of both frontend and backend applications.
+
+[My Fellow Developers] – For collaboration, feedback, and encouragement throughout the build.
+
+# Built with snacks 🍿, creativity 🎨, and a bit of magic 🧙.
