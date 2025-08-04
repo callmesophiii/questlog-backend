@@ -81,9 +81,9 @@
 
 ## 🔑 Environment Variables
 - PORT:	Port the backend server runs on
-MONGO_URI:	MongoDB connection string
-JWT_SECRET:	Secret key to sign JWT tokens
-VITE_BACKEND_URL:	Used in frontend to connect the API
+- MONGO_URI:	MongoDB connection string
+- JWT_SECRET:	Secret key to sign JWT tokens
+- VITE_BACKEND_URL:	Used in frontend to connect the API
 
 ---
 
