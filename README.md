@@ -48,36 +48,36 @@
 
 # 🖥️ Backend Setup
 
-# Clone the backend repo
-git clone https://github.com/YOUR_USERNAME/questlog-backend.git
-cd questlog-backend
+### Clone the backend repo
+- git clone https://github.com/callmesophiii/questlog-backend.git
+- cd questlog-backend
 
-# Install dependencies
-npm install
+### Install dependencies
+-npm install
 
-# Create .env file
+### Create .env file
 
-# Run locally: npm run dev
+### Run locally: npm run dev
 
 # 🖥️ Frontend Setup
 
-# Clone the frontend repo
+### Clone the frontend repo
 git clone https://github.com/YOUR_USERNAME/questlog-frontend.git
 cd questlog-frontend
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Create .env file
+### Create .env file
 
-# Run locally: npm run dev
+### Run locally: npm run dev
 
 ---
 
 ## 🌐 Deployment
-Frontend: https://questlog-frontend.vercel.app
+- Frontend: https://questlog-frontend.vercel.app
 
-Backend: https://questlog-backend-gbix.onrender.com
+- Backend: https://questlog-backend-gbix.onrender.com
 
 ## 🔑 Environment Variables
 Variable	Description
