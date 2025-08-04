@@ -1,4 +1,4 @@
-# 🗺️ QuestLog
+# 🛡️ QuestLog
 
 **QuestLog** is a full-stack, fantasy-themed **project and task management application** where users become "Heroes," projects are "Quests," and tasks are "Objectives." Designed with gamification in mind, QuestLog motivates productivity by turning goal tracking into an engaging adventure with leveling, XP rewards, avatars, and team collaboration.
 
@@ -89,35 +89,35 @@ VITE_BACKEND_URL:	Used in frontend to connect the API
 
 ## 🧪 API Endpoints
 
-- POST	/api/auth/register	Register new hero
-- POST	/api/auth/login	Login hero and return token
+- POST	/api/auth/register:	Register new hero
+- POST	/api/auth/login:	Login hero and return token
 
 ---
 
 ## 🧝 Hero
 
-GET	/api/heroes/me	Get current hero profile
-PUT	/api/heroes/avatar	Update hero avatar image
+- GET	/api/heroes/me:	Get current hero profile
+- PUT	/api/heroes/avatar:	Update hero avatar image
 
 ---
 
 ## 🗺️ Quests
 
-- GET	/api/quests	Get all quests for logged-in hero
-- GET	/api/quests/:id	Get single quest by ID
-- POST	/api/quests	Create a new quest
-- PUT	/api/quests/:id	Update quest (only owner)
-- DELETE	/api/quests/:id	Delete quest (only owner)
-- PUT	/api/quests/:id/join	Join an existing quest
-- PUT	/api/quests/:id/invite	Invite another hero to the quest
+- GET	/api/quests:	Get all quests for logged-in hero
+- GET	/api/quests/:id :	Get single quest by ID
+- POST	/api/quests:	Create a new quest
+- PUT	/api/quests/:id :	Update quest (only owner)
+- DELETE	/api/quests/:id :	Delete quest (only owner)
+- PUT	/api/quests/:id/join:	Join an existing quest
+- PUT	/api/quests/:id/invite:	Invite another hero to the quest
 
 ---
 
 ## ✅ Objectives
-- GET	/api/quests/:questId/objectives	Get all objectives for a quest
-- POST	/api/quests/:questId/objectives	Create a new objective
-- PUT	/api/quests/:questId/objectives/:objectiveId	Update status or details
-- DELETE	/api/quests/:questId/objectives/:objectiveId	Delete an objective
+- GET	/api/quests/:questId/objectives:	Get all objectives for a quest
+- POST	/api/quests/:questId/objectives:	Create a new objective
+- PUT	/api/quests/:questId/objectives/:objectiveId :	Update status or details
+- DELETE	/api/quests/:questId/objectives/:objectiveId :	Delete an objective
 
 ---
 
