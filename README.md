@@ -80,46 +80,44 @@
 - Backend: https://questlog-backend-gbix.onrender.com
 
 ## 🔑 Environment Variables
-Variable	Description
-PORT	Port the backend server runs on
-MONGO_URI	MongoDB connection string
-JWT_SECRET	Secret key to sign JWT tokens
-VITE_BACKEND_URL	Used in frontend to connect API
+- PORT:	Port the backend server runs on
+MONGO_URI:	MongoDB connection string
+JWT_SECRET:	Secret key to sign JWT tokens
+VITE_BACKEND_URL:	Used in frontend to connect the API
 
 ---
 
 ## 🧪 API Endpoints
-🔐 Auth
-Method	Endpoint	Description
-POST	/api/auth/register	Register new hero
-POST	/api/auth/login	Login hero and return token
+
+- POST	/api/auth/register	Register new hero
+- POST	/api/auth/login	Login hero and return token
 
 ---
 
 ## 🧝 Hero
-Method	Endpoint	Description
+
 GET	/api/heroes/me	Get current hero profile
 PUT	/api/heroes/avatar	Update hero avatar image
 
 ---
 
 ## 🗺️ Quests
-Method	Endpoint	Description
-GET	/api/quests	Get all quests for logged-in hero
-GET	/api/quests/:id	Get single quest by ID
-POST	/api/quests	Create a new quest
-PUT	/api/quests/:id	Update quest (only owner)
-DELETE	/api/quests/:id	Delete quest (only owner)
-PUT	/api/quests/:id/join	Join an existing quest
-PUT	/api/quests/:id/invite	Invite another hero to the quest
+
+- GET	/api/quests	Get all quests for logged-in hero
+- GET	/api/quests/:id	Get single quest by ID
+- POST	/api/quests	Create a new quest
+- PUT	/api/quests/:id	Update quest (only owner)
+- DELETE	/api/quests/:id	Delete quest (only owner)
+- PUT	/api/quests/:id/join	Join an existing quest
+- PUT	/api/quests/:id/invite	Invite another hero to the quest
 
 ---
 
 ## ✅ Objectives
-GET	/api/quests/:questId/objectives	Get all objectives for a quest
-POST	/api/quests/:questId/objectives	Create a new objective
-PUT	/api/quests/:questId/objectives/:objectiveId	Update status or details
-DELETE	/api/quests/:questId/objectives/:objectiveId	Delete an objective
+- GET	/api/quests/:questId/objectives	Get all objectives for a quest
+- POST	/api/quests/:questId/objectives	Create a new objective
+- PUT	/api/quests/:questId/objectives/:objectiveId	Update status or details
+- DELETE	/api/quests/:questId/objectives/:objectiveId	Delete an objective
 
 ---
 
@@ -129,10 +127,4 @@ DELETE	/api/quests/:questId/objectives/:objectiveId	Delete an objective
 📦 Organized controllers & routes for modularity
 
 🧪 Error messages returned in JSON format
-
-✅ XP updates are handled client-side after objective completion
-
-🖼️ Avatar assets live in /public/avatars
-
-
 
