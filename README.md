@@ -116,7 +116,6 @@ PUT	/api/quests/:id/invite	Invite another hero to the quest
 ---
 
 ## ✅ Objectives
-Method	Endpoint	Description
 GET	/api/quests/:questId/objectives	Get all objectives for a quest
 POST	/api/quests/:questId/objectives	Create a new objective
 PUT	/api/quests/:questId/objectives/:objectiveId	Update status or details
