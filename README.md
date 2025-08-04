@@ -53,7 +53,7 @@
 - cd questlog-backend
 
 ### Install dependencies
--npm install
+- npm install
 
 ### Create .env file
 
@@ -62,11 +62,11 @@
 # 🖥️ Frontend Setup
 
 ### Clone the frontend repo
-git clone https://github.com/YOUR_USERNAME/questlog-frontend.git
-cd questlog-frontend
+- git clone https://github.com/callmesophiii/questlog-frontend.git
+- cd questlog-frontend
 
 ### Install dependencies
-npm install
+- npm install
 
 ### Create .env file
 
